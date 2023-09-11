@@ -1,0 +1,23 @@
+{
+  "name": "db-queue",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node main.ts",
+    "types:check": "tsc --noEmit",
+    "db:push": "drizzle-kit push:sqlite"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.6.0",
+    "drizzle-orm": "^0.28.6",
+    "fastify": "^4.23.0",
+    "p-map": "^6.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/better-sqlite3": "^7.6.4",
+    "drizzle-kit": "^0.19.13",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
